@@ -1,0 +1,19 @@
+<!-- create 2 input box with id "num1" and "num2" -->
+
+
+<input type="text" id="num1"> <br>
+<input type="text" id="num2"> <br>
+<input type="text" id="result" placeholder="result"><br>
+<button onclick="add()">Add</button> 
+<script>
+    var box1=document.getElementById("num1");
+    var box2=document.getElementById("num2");
+    var res=document.getElementById("result");
+    function add(){
+        var box1Value=Number(box1.value);
+        var box2Value=Number(box2.value);
+        var total =box1Value+box2Value;
+        res.value=total;''
+    }
+</script>
+
