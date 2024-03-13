@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .popup{
+            border: 2px solid black;
+            text-align: justify;
+            padding:30px 30px;
+            margin: 30px 50px;
+            background: purple;
+            color:whitesmoke;
+            font-weight:bolder;
+            border-radius: 25%;
+            display: none;
+        }
+        .popup button{
+              width: 100px;
+              height: 30px;
+              border-radius: 25px;
+              color: rgb(202, 39, 161);
+              font-size: 19px;
+        }
+        .popup button:hover{
+            box-shadow: 1px 2px rgb(82, 60, 60);
+            cursor: pointer;
+         
+        }
+
+        
+    </style>
+</head>
+<body>
+    <button onclick="show()">show</button>
+    <div class="popup">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatum beatae nesciunt necessitatibus? Excepturi autem dolore impedit rem natus. Quam nobis optio facilis eveniet asperiores. Vero quod debitis est labore.</p>
+        <button onclick="closes()">close</button>
+    </div>
+    <script>
+         var popups=document.querySelector(".popup");
+         function show(){
+            popups.style.display="block";
+         }
+         function closes(){
+            popups.style.display="none";
+         }
+    </script>
+</body>
+</html>
