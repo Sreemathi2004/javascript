@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+</head>
+<body>
+    <input type="text" id="contentBox" onkeyup="display()">
+    <h1 id="res"></h1>
+    
+    <script>
+        var con=document.getElementById("contentBox");
+        var res=document.getElementById("res");
+
+        function display(){
+            res.textContent=con.value;
+        }
+    </script>
+
+</body>
+</html>
