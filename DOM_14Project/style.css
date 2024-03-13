@@ -11,6 +11,10 @@ body{
     background-color: #fd6569;
     padding: 10px;
 }
+.navbar h1{
+    text-align: center;
+    font-size:40px;
+}
 
 .container{
     padding: 10px;
