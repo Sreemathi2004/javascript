@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+</head>
+<body>
+    <h1>GUESS NUMBER</h1>
+    <input type="text" id="num">
+    <button onclick="guessNumber()">Check</button>
+    <p id="msg">You are </p>
+    <p id="score">Score : </p>
+    <h1 id="refresh"></h1>
+
+    <script>
+        var num=document.getElementById("num");
+        var msg=document.getElementById("msg");
+        var score=document.getElementById("score");
+        var totalscore=10;
+        function guessNumber(){
+            var guess=Math.floor(Math.random()*10+1);
+            var enteredNumber=num.value;
+            if(totalscore<=0){
+                alert("Restart Your Game");
+                var h1=document.getElementById("refresh");
+                h1.textContent="Refresh Your Page";
+
+            }
+            else if(totalscore>0){
+            if(guess==enteredNumber){
+                msg.textContent=" You are Right";
+                score.textContent="Score : "+totalscore;
+                alert("Won!!!");
+            }
+            else{
+               totalscore=totalscore-1;
+               msg.textContent="Try Again";
+                score.textContent="Score : "+totalscore;
+
+            }
+        }
+
+            
+        }
+    </script>
+</body>
+</html>
