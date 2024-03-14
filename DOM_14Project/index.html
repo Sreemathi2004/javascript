@@ -30,14 +30,14 @@
     <div class="popup-box">
         <h2>Add Book</h2>
         <form action="">
-            <input type="text" name="" id="book-title-input" placeholder="Book Title">
-            <input type="text" name="" id="book-author-input" placeholder="Book Author">
-            <textarea name="" id="book-description-input" cols="30" rows="10" placeholder="short description"></textarea>
+            <input type="text" name="" id="book-title-input" placeholder="Book Title" required>
+            <input type="text" name="" id="book-author-input" placeholder="Book Author" required>
+            <textarea name="" id="book-description-input" cols="30" rows="10" placeholder="short description" required></textarea>
             <button id="add-book">Add</button>
             <button id="cancel-popup">Cancel</button>
         </form>
     </div>
-    <button class="add-button" id="add-popup-button">+</button>
+    <button class="add-button" id="add-popup-button" onclick="resSet()">+</button>
     <script src="script.js"></script>
 </body>
 </html>
