@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: radial-gradient(rgba(232, 129, 129, 0.6),rgba(134, 188, 41, 0.7),rgba(42, 127, 131, 0.8));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.box{
+    padding: 20px;
+    text-align: center;
+}
+.dhurva{
+    font-family: 'Inspiration';
+    font-size:  50px;
+    margin-top: 40px;
+    font-weight: bolder;
+}
+
+@media (min-width:500px) {
+    .dhurva{
+        font-size: 100px;
+        font-weight: bolder;
+    }
+    p{
+        font-size: 25px;
+    }
+    .box h2{
+        font-size: 30px;
+    }
+    .box small{
+        font-size: 15px;
+    }
+    body{
+        background: radial-gradient(rgba(232, 129, 129, 0.6),rgba(134, 188, 41, 0.7),rgba(42, 127, 131, 0.8)),url("dhurva.jpg");
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    
+    
+}
+@media (min-width:700px){
+    .dhurva{
+        font-size: 150px;
+        font-weight: bolder;
+    }
+    p{
+        font-size: 30px;
+    }
+    .box h2{
+        font-size: 60px;
+    }
+    .box small{
+        font-size: 20px;
+    }
+    body{
+        background: radial-gradient(rgba(232, 129, 129, 0.6),rgba(134, 188, 41, 0.7),rgba(42, 127, 131, 0.8)),url("dhurva.jpg");
+        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+
+}
